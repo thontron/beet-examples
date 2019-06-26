@@ -1,0 +1,12 @@
+<script src="../../dist/beet-js.js"></script>
+<script>
+beet.get("BitShares Signature", "BTS").then(beet => {
+    beet.BTS.signMessage("Type: Week").then(res => {
+        console.log(res);
+    }).catch((err) => {
+        console.error(err);
+    });
+}).catch((err) => {
+    console.error(err);
+});
+</script>
